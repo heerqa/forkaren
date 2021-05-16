@@ -111,12 +111,13 @@
             <version>2.2.7</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>compile</scope>
-        </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>compile</scope>
+            </dependency>
+
     </dependencies>
     <profiles>
         <profile>
@@ -210,14 +211,8 @@
                         <version>3.0.0-M4</version>
                         <configuration>
                             <includes>
-                                <include>**/*RestTest.java</include>
-                                <include>**/RestTest*.java</include>
-                                <include>**/*RestTestSuite.java</include>
-                                <include>**/RestWhen*.java</include>
+                                <include>**/*CucumberRestTestSuite</include>
                             </includes>
-                            <systemPropertyVariables>
-                                <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
-                            </systemPropertyVariables>
                             <parallel>classes</parallel>
                             <threadCount>${parallel.tests}</threadCount>
                             <forkCount>${parallel.tests}</forkCount>

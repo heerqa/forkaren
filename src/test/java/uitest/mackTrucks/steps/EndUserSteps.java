@@ -1,13 +1,20 @@
 package uitest.mackTrucks.steps;
 
+
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
+import resttest.AppStatus;
 import uitest.mackTrucks.pages.ExtendedPageObject;
 import uitest.mackTrucks.pages.LandingPage;
+
+
 
 public class EndUserSteps extends ExtendedPageObject {
 
 	LandingPage landingPage;
+
+
+
 
 	@Step
 	public void user_is_on_Landing_page() throws InterruptedException {
