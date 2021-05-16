@@ -4,7 +4,7 @@ Feature: test security administration features
   be added or updated for my Bank.
 
   Background:
-    Given : user ia login with username "username" and password "password"
+    Given : user is login with username "username" and password "password"
     Then : user is on Security Administraion page
 
   Scenario: verify that user with role <need to ask role type> is able tpo add Entity
