@@ -12,7 +12,7 @@ public class DefinitionSteps {
 	@Steps
 	EndUserSteps steps;
 
-	
+
 
 
 	@Given(": user is login with username {string} and password {string}")
